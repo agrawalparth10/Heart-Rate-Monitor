@@ -4,9 +4,9 @@ Measuring Pulse using Computer Vision
 
 TODO LIST - 
 
-1. ~~Measure BPM with an error of \pm 20
-2. Measure BPM with an error of \pm 10
-3. Measure BPM with an error of \pm 5
+1. <strike> Measure BPM with an error of &plusmn; 20 </strike>
+2. Measure BPM with an error of &plusmn; 10
+3. Measure BPM with an error of &plusmn; 5
 
 
 
