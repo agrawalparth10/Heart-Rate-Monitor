@@ -1,9 +1,9 @@
 # Heart-Rate-Sensor
 
-## Description
+### Description
 Measuring Pulse using Computer Vision
 
-## Experiments 
+### Experiments 
 
 1. **Face Detection Algorithm** -
 
@@ -22,7 +22,7 @@ Experiment Details coming soon
 3. **Relationship between the time to sample data and accuracy** - 
 Experiment Details coming soon
 
-## ToDo List - 
+### ToDo List - 
 1. -[x] ~~Measure BPM with an error of &plusmn; 20
 2. -[ ] Measure BPM with an error of &plusmn; 10
 3. -[ ] Measure BPM with an error of &plusmn; 5
@@ -30,7 +30,7 @@ Experiment Details coming soon
 
 
 
-## REFERENCES - 
+### References - 
 
 1. <https://github.com/habom2310/Heart-rate-measurement-using-camera>
 2. <https://web.stanford.edu/class/cs231a/prev_projects_2016/finalReport.pdf>
