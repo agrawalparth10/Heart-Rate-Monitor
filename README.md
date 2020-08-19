@@ -16,6 +16,10 @@ The purpose is to find the an appropriate face detection algorithm on the follow
 
 In my use case -  Res10 SSD outperformed FrontFaceCascade 
 
+2. **ICA vs PCA** -
+Experiment Details coming soon
+
+3. **Relationship between the time to sample data and accuracy** - 
 Experiment Details coming soon
 
 ## ToDo List - 
