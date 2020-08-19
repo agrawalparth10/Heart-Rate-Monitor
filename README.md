@@ -26,7 +26,7 @@ FrontFaceCascade didn't work so well for my case
 
 
 
-REFERENCES - 
+## REFERENCES - 
 
 1. <https://github.com/habom2310/Heart-rate-measurement-using-camera>
 2. <https://web.stanford.edu/class/cs231a/prev_projects_2016/finalReport.pdf>
