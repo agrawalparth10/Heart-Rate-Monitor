@@ -16,7 +16,7 @@ The purpose is to find the an appropriate face detection algorithm on the follow
 
 In my use case -  Res10 SSD outperformed FrontFaceCascade 
 
-FrontFaceCascade didn't work so well for my case
+Experiment Details coming soon
 
 ## ToDo List - 
 1. -[x] ~~Measure BPM with an error of &plusmn; 20
