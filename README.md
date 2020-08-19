@@ -23,7 +23,7 @@ Experiment Details coming soon
 Experiment Details coming soon
 
 ### ToDo List - 
-1. -[x] ~~Measure BPM with an error of &plusmn; 20
+1. -[x] ~~Measure BPM with an error of &plusmn; 20~~
 2. -[ ] Measure BPM with an error of &plusmn; 10
 3. -[ ] Measure BPM with an error of &plusmn; 5
 4. -[ ] Convert the script in the form of a library
