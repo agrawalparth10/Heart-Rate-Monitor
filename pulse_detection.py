@@ -1,5 +1,5 @@
 import numpy as np 
-import cv2 as cv
+import cv2
 import time
 from sklearn.decomposition import FastICA
 import matplotlib.pyplot as plt
@@ -16,8 +16,8 @@ MAX_HR_BMP = 240.0
 MAX_HR_CHANGE = 12.0
 SEC_PER_MIN = 60
 
-detector = cv.dnn.readNetFromCaffe(PROTO_PATH,MODEL_PATH)
-video = cv.VideoCapture(0)
+detector = cv2.dnn.readNetFromCaffe(PROTO_PATH,MODEL_PATH)
+video = cv2.VideoCapture(0)
 time.sleep(2)
 
 buffer = []
@@ -29,8 +29,8 @@ while(time.time() - start < 360):
 
     (h, w) = frame.shape[:2]
 
-    image_blob = cv.dnn.blobFromImage(
-            cv.resize(frame, (300, 300)), 1.0, (300, 300),
+    image_blob = cv2.dnn.blobFromImage(
+            cv2.resize(frame, (300, 300)), 1.0, (300, 300),
             (104.0, 177.0, 123.0), swapRB=False, crop=False)
     detector.setInput(image_blob)
     detections = detector.forward()
@@ -43,6 +43,7 @@ while(time.time() - start < 360):
 
     col = face_box.reshape(-1, face_box.shape[-1])
     buffer.append(col.mean(axis = 0))
+    hr = 0
 
 
     if(time.time() - start > 30):
@@ -64,5 +65,13 @@ while(time.time() - start < 360):
         hr = validFreqs[maxPwrIdx]
         print(hr * 60)
 
+    face = cv2.rectangle(frame,(x1,y1),(x2,y2),(255,0,0),2)
+    text = str(hr * 60)
+    face = cv2.putText(face, text, (x1, y1),cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 255, 0), 2)
+    cv2.imshow("face", face)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+
 video.release()
-cv.destroyAllWindows()
+cv2.destroyAllWindows()
