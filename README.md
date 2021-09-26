@@ -1,33 +1,12 @@
-# Heart-Rate-Sensor
+# Heart-Rate-Monitor
 
 ### Description
-Measuring Pulse using Computer Vision
+A contactless heart rate monitor in python using computer vision. A reimplementation of **Detecting Pulse from Head Motions in Video** paper. 
 
-### Experiments 
-
-1. **Face Detection Algorithm** -
-
-The purpose is to find the an appropriate face detection algorithm on the following characteristics - 
-
-    1. Captures the face of the user 
-    2. Works well under different lighting conditions 
-    3. Minimum BPM error 
-    4. Low computation cost 
-
-In my use case -  Res10 SSD outperformed FrontFaceCascade 
-
-2. **ICA vs PCA** -
-Experiment Details coming soon
-
-3. **Relationship between the time to sample data and accuracy** - 
-Experiment Details coming soon
-
-### ToDo List - 
-1. -[x] ~~Measure BPM with an error of &plusmn; 20~~
-2. -[ ] Measure BPM with an error of &plusmn; 10
-3. -[ ] Measure BPM with an error of &plusmn; 5
-4. -[ ] Convert the script in the form of a library
-
+### Usage
+```
+python pulse_detection.py
+```
 
 
 ### References - 
